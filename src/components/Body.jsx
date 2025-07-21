@@ -77,7 +77,7 @@ const Body = () => {
           {filteredResto.map((restaurant) => (
             <Link
               key={restaurant.info.id}
-              to={`/restaurants/${restaurant.info.id}`}
+              to={`/Swiggy-FrontEnd/restaurants/${restaurant.info.id}`}
               className="transform transition-transform duration-300 ease-in-out hover:scale-105"
             >
               {restaurant.info.veg ? (
