@@ -48,7 +48,7 @@ export const withVegLabel = (RestoCard) => {
   return (props) => {
     return (
       <div className="relative">
-        <span className="absolute top-3 left-0 bg-green-600 text-white text-xs px-2 py-0.5 rounded-r-md z-10">
+        <span className="absolute top-3 left-0 bg-green-600 text-white text-ml px-2 py-0.5 rounded-r-md z-10">
           Pure Veg
         </span>
         <RestoCard {...props} />

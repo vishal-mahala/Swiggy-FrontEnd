@@ -31,15 +31,18 @@ const AppLayout = () => {
 
 const appRouter = createBrowserRouter([
   {
-    path: "/",
+    path: "/Swiggy-FrontEnd/",
     element: <AppLayout />,
     children: [
-      { path: "/", element: <Body /> },
-      { path: "/about", element: <About /> },
-      { path: "/contact", element: <Contact /> },
-      { path: "/restaurants/:resId", element: <RestaurantMenu /> },
-      { path: "/grocery", element: <Grocery /> },
-      { path: "/cart", element: <Cart /> },
+      { path: "/Swiggy-FrontEnd/", element: <Body /> },
+      { path: "/Swiggy-FrontEnd/about", element: <About /> },
+      { path: "/Swiggy-FrontEnd/contact", element: <Contact /> },
+      {
+        path: "/Swiggy-FrontEnd/restaurants/:resId",
+        element: <RestaurantMenu />,
+      },
+      { path: "/Swiggy-FrontEnd/grocery", element: <Grocery /> },
+      { path: "/Swiggy-FrontEnd/cart", element: <Cart /> },
     ],
     errorElement: <Error />,
   },

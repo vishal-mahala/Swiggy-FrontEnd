@@ -13,7 +13,7 @@ const Header = () => {
     <header className="bg-white w-full fixed top-0 left-0 z-50 px-4 sm:px-6 lg:px-10 shadow-sm">
       <div className="max-w-7xl mx-auto flex flex-col sm:flex-row sm:items-center sm:justify-between h-auto sm:h-16 py-2 sm:py-0 gap-2 sm:gap-0">
         {/* Logo Section */}
-        <Link to="/" className="flex items-center gap-2">
+        <Link to="/Swiggy-FrontEnd/" className="flex items-center gap-2">
           <div className="h-10 w-6 flex items-center gap-2 overflow-hidden">
             <img
               src={LOGO_URL}
@@ -31,14 +31,17 @@ const Header = () => {
             </li>
 
             <li>
-              <Link to="/" className="hover:text-orange-600 transition-colors">
+              <Link
+                to="/Swiggy-FrontEnd/"
+                className="hover:text-orange-600 transition-colors"
+              >
                 Home
               </Link>
             </li>
 
             <li>
               <Link
-                to="/about"
+                to="/Swiggy-FrontEnd/about"
                 className="hover:text-orange-600 transition-colors"
               >
                 About&nbsp;Us
@@ -47,7 +50,7 @@ const Header = () => {
 
             <li>
               <Link
-                to="/contact"
+                to="/Swiggy-FrontEnd/contact"
                 className="hover:text-orange-600 transition-colors"
               >
                 Contact&nbsp;Us
@@ -56,7 +59,7 @@ const Header = () => {
 
             <li>
               <Link
-                to="/grocery"
+                to="/Swiggy-FrontEnd/grocery"
                 className="hover:text-orange-600 transition-colors"
               >
                 <Suspense fallback={<span>Loading…</span>}>Grocery</Suspense>
@@ -65,7 +68,7 @@ const Header = () => {
 
             <li className="relative">
               <Link
-                to="/cart"
+                to="/Swiggy-FrontEnd/cart"
                 className="hover:text-orange-600 transition-colors"
               >
                 <i className="bi bi-bag font-black text-[20px]"></i>
